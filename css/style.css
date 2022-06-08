@@ -104,7 +104,7 @@ a{
     -webkit-animation: slit-in-vertical 0.45s ;
                 animation: slit-in-vertical 0.45s ;
     }
-@keyframes main__img {
+@keyframes slit-in-vertical {
     0% {
       -webkit-transform: translateZ(-800px) rotateY(90deg);
               transform: translateZ(-800px) rotateY(90deg);
@@ -141,12 +141,35 @@ a{
     height: 30rem;
     width:30rem;
 }
+  
 .main__p{
     color: aliceblue;
    margin: 1rem 3rem 1.5rem 3rem;
     font-size: 18px;
+    -webkit-animation: scale-up-ver-center 0.4s ;
+	        animation: scale-up-ver-center 0.4s ;
     
 }
+@-webkit-keyframes scale-up-ver-center {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+  @keyframes scale-up-ver-center {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
 
 .producto{
     margin-top: 1rem;
